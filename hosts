@@ -1,0 +1,18 @@
+[all:vars]
+ansible_user=vagrant
+
+[database]
+db ansible_connection=192.168.56.101
+
+[webservers]
+web1 ansible_connection=192.168.56.102
+web2 ansible_connection=192.168.56.103
+
+[loadbalancer]
+lb ansible_connection=192.168.56.104
+
+[queue]
+que ansible_connection=192.168.56.105
+
+[control]
+master ansible_connection=192.168.56.106
