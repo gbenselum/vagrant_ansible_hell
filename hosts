@@ -16,7 +16,7 @@ lb1 ansible_host=192.168.56.104
 que1 ansible_host=192.168.56.105
 
 [control]
-master ansible_host=192.168.56.106
+master ansible_connection=local
 
 [rhfamily]
 master
