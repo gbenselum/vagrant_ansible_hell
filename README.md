@@ -1,4 +1,6 @@
-# diversity_ansible_lab
+# vagrant_ansible_hell
+
+
 vagrant lab and playbooks with an "ansible hell" of several linux distros
 
 Beta version.
