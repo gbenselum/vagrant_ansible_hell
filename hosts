@@ -1,18 +1,19 @@
 [all:vars]
 ansible_user=vagrant
+ansible_connection=ssh
 
 [database]
-db1 ansible_connection=192.168.56.101
+db1 ansible_host=192.168.56.101
 
 [webservers]
-web1 ansible_connection=192.168.56.102
-web2 ansible_connection=192.168.56.103
+web1 ansible_host=192.168.56.102
+web2 ansible_host=192.168.56.103
 
 [loadbalancer]
-lb1 ansible_connection=192.168.56.104
+lb1 ansible_host=192.168.56.104
 
 [queue]
-que1 ansible_connection=192.168.56.105
+que1 ansible_host=192.168.56.105
 
 [control]
-tower ansible_connection=192.168.56.106
+tower ansible_connection=local
