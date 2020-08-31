@@ -5,4 +5,3 @@ Coming soon...
 
 
 Some of the code is "forked" from:
-https://medium.com/@smartsplash/using-scp-and-vagrant-scp-in-virtualbox-to-copy-from-guest-vm-to-host-os-and-vice-versa-9d2c828b6197
