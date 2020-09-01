@@ -6,8 +6,19 @@
 #clean up ssh keys if is not the first run
 ssh-keygen -f "$HOME/.ssh/known_hosts" -R "192.168.56.106"
 
+# check requirements
+if ! command -v vagrant &> /dev/null
+then
+    echo "Vagrant not found"
+    exit
+fi
 
 
+if ! command -v virtualbox &> /dev/null
+then
+    echo "virtualbox not found"
+    exit
+fi
 
 
 
@@ -24,3 +35,4 @@ rm inventory
 ssh vagrant@192.168.56.106 'sudo yum install python3 -y; sudo pip3 install ansible ansible-lint'
 
 # remmeber to press "yes" running your first ansible command
+
