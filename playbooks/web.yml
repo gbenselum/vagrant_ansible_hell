@@ -1,0 +1,26 @@
+
+---
+- hosts: webservers
+  tasks:
+  - name: Instalar httpd
+    package: 
+      name: httpd
+      state: present
+
+  - name: permitir trafico www en firewalld
+    firewalld:
+      service: http
+      permanent: yes
+      state: enabled
+      
+  - name: reiniciar firewalld para tomar reglas
+    service:
+      name: firewalld
+      state: restarted
+   
+  - name: iniciar servicio httpd 
+    service:
+      name: httpd
+      state: started
+      
+...
