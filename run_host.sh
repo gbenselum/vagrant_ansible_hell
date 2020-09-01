@@ -2,6 +2,7 @@
 # This script must run your host 
 # After Run, start with: "vagrant ssh control"
 
+ssh-keygen -f "~/.ssh/known_hosts" -R "192.168.56.106"
 
 # send vagrant insecure KEY to control node
 scp ~/.vagrant.d/insecure_private_key vagrant@192.168.56.106:~/.ssh/id_rsa
