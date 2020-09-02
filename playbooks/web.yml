@@ -5,19 +5,7 @@
   - name: Instalar httpdp
     package: 
       name: apache2
-      state: present
-#
-#  - name: permitir trafico www en firewalld
-#    firewalld:
-#      service: http
-#      permanent: yes
-#      state: enabled
-      
-#  - name: reiniciar firewalld para tomar reglas
-#    service:
-#      name: firewalld
-#      state: restarted
-   
+      state: present 
   - name: iniciar servicio httpd 
     service:
       name: apache2
