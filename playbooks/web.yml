@@ -4,7 +4,7 @@
   tasks:
   - name: Instalar httpdp
     package: 
-      name: apache
+      name: apache2
       state: present
 #
 #  - name: permitir trafico www en firewalld
@@ -20,7 +20,7 @@
    
   - name: iniciar servicio httpd 
     service:
-      name: httpd
+      name: apache2
       state: started
       
 ...
