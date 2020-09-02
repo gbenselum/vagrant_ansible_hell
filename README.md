@@ -7,8 +7,25 @@ Beta version. Not ready yet
 
 Fork, Clone or pull :D
 
+Prerequisites:
+
+vagrant
+virtualbox
+git 
+Linux
+(it might work with some tinkering in OSx or in Windows+WSL )
+
 Instructions:
-comming soon:
+clone this repo
+$ cd vagrant_ansible_hell
+
+start vagrant vms, it will take around 5 minutes
+$ vagrant up
+
+run the post config bash script
+$ sh run_host.sh
+
+
 
 Sources and Thaks to:
 https://medium.com/@mschirbel/how-to-setup-a-home-lab-to-practice-ansible-74b651e9b1df

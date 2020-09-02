@@ -6,6 +6,8 @@
 #clean up ssh keys if is not the first run
 ssh-keygen -f "$HOME/.ssh/known_hosts" -R "192.168.56.106"
 
+
+# DEPLOY
 # send vagrant insecure KEY to control node
 scp ~/.vagrant.d/insecure_private_key vagrant@192.168.56.106:~/.ssh/id_rsa
 ssh vagrant@192.168.56.106 'chmod 700 ~/.ssh/id_rsa'
