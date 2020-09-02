@@ -1,4 +1,12 @@
 ---
+
+- hosts: control
+  become: true
+  tasks:
+  - name: Install Docker Python Library
+    pip:
+      name: docker-py
+
 - hosts: webservers
   become: true
   tasks:
@@ -6,13 +14,10 @@
     service:
       name: docker
       state: started
-  
-  
   - name: pull an image
     docker_image:
       name: httpd
       source: pull
-
   - name: Creating Docker Container
     docker_container:
       name: mywebserver
