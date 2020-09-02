@@ -2,11 +2,11 @@
 ---
 - hosts: webservers
   tasks:
-  - name: Instalar httpdp
+  - name: install apache2
     package: 
       name: apache2
       state: present 
-  - name: iniciar servicio httpd 
+  - name: start apache2 service 
     service:
       name: apache2
       state: started

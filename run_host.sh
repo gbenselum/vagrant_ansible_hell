@@ -16,5 +16,10 @@ ssh vagrant@192.168.56.106 'sudo yum install python3 git -y; sudo pip3 install a
 # git clone on the control node
 ssh vagrant@192.168.56.106 'git clone https://github.com/gbenselum/vagrant_ansible_hell.git'
 
+# /etc/hosts file for DNS resolution
+ssh vagrant@192.168.56.106 'sudo cp etchost /etc/hosts'
+
+# create /etc/ansible
+ssh vagrant@192.168.56.106 'sudo mkdir /etc/ansible'
 echo ""remmeber to press "yes" for every host running your first ansible command ""
 
