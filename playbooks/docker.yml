@@ -1,6 +1,5 @@
 ---
 - hosts: webservers
-
   become: true
  
   tasks:
@@ -30,6 +29,4 @@
         update_cache: yes 
         name: docker-ce 
         state: latest
-
-
 ...

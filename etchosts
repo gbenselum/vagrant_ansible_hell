@@ -1,4 +1,4 @@
-
+#hosts file for DNS resolution
 127.0.0.1 localhost
 192.168.56.101 db1
 192.168.56.102 web1
