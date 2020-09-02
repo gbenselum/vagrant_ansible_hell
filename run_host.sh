@@ -15,8 +15,8 @@ curl https://raw.githubusercontent.com/gbenselum/diversity_ansible_lab/master/ho
 scp ./inventory vagrant@192.168.56.106:~/inventory
 rm inventory
 
-# installs pip3 and then ansible on control node
-ssh vagrant@192.168.56.106 'sudo yum install python3 -y; sudo pip3 install ansible ansible-lint'
+# installs git, pip3 and then ansible on control node
+ssh vagrant@192.168.56.106 'sudo yum install python3 git -y; sudo pip3 install ansible ansible-lint'
 
 # remmeber to press "yes" running your first ansible command
 
