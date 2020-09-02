@@ -23,5 +23,5 @@ ssh vagrant@192.168.56.106 'sudo cp etchost /etc/hosts'
 
 # create /etc/ansible
 ssh vagrant@192.168.56.106 'sudo mkdir /etc/ansible'
-echo ""remmeber to press "yes" for every host running your first ansible command ""
+echo ""remmeber to press "yes" for every host running your first ansible command, access lab with "vagrant ssh control" ""
 

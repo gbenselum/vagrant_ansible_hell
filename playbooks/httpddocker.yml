@@ -1,21 +1,28 @@
 ---
+---
+- hosts: webservers
+  become: true
+  tasks:
+  - name: Starting Docker Service
+    service:
+      name: docker
+      state: started
+  
+  
+  - name: pull an image
+    docker_image:
+      name: httpd
+      source: pull
 
-
-- name: pull an image
-  docker_image:
-    name: httpd
-    source: pull
-
-
-- name: Creating Docker Container
-  docker_container:
-    name: mywebserver
-    image: httpd
-    state: started
-    detach: true
-    interactive: true
-    ports:
-    - "1111:80"
+  - name: Creating Docker Container
+    docker_container:
+      name: mywebserver
+      image: httpd
+      state: started
+      detach: true
+      interactive: true
+      ports:
+      - "1111:80"
 
 
 # docker run -dit --name my-apache-app -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
