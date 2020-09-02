@@ -2,7 +2,7 @@
 ---
 - hosts: webservers
   tasks:
-  - name: Instalar httpd
+  - name: Instalar httpdp
     package: 
       name: httpd
       state: present
