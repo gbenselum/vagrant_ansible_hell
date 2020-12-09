@@ -3,7 +3,7 @@
 
 vagrant lab and playbooks with an "ansible hell" of several linux distros
 
-Beta version. Not ready yet
+NOT READY PRE ALPHA version. Not ready yet
 
 Fork, Clone or pull :D
 
